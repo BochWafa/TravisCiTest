@@ -5,8 +5,12 @@ node_js:
 branches:
   only:
     - master
-
 before_script:
   - npm install -g @angular/cli
 script:
   - ng build --prod
+deploy:
+  provider: heroku
+  api_key: a0693624-fb05-449b-97a7-c86d4c4b8453
+  app: my-app-123
+
