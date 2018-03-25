@@ -8,6 +8,5 @@ branches:
 
 before_script:
   - npm install -g @angular/cli
-  - npm install cool-ascii-faces
 script:
   - ng build --prod
